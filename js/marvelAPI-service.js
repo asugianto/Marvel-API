@@ -18,7 +18,7 @@ MarvelApp.service('MarvelApiService' , function($http) {
                 url: url,
                 method: 'GET',
                 params: {
-                    apikey: '3a5ee8397d82dd1d8b96300b674e5971',
+                    apikey: '<YOUR_API_KEY>',
                     limit: 42
                 }
             });
