@@ -1,0 +1,18 @@
+<div class="marvelApiDetail" ng-init="detailComic()">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="detailPic" ng-src="{{comicDetail.thumbnail.path}}.{{comicDetail.thumbnail.extension}}"/>
+        </div>
+        <div class="col-md-8">
+            <h1>{{comicDetail.title}}</h1><br/><br/>
+            <div class="description">{{comicDetail.description}}</div><br/>
+            <div>Price: <span class="price">${{comicDetail.prices[0].price}}</span></div><br/>
+            Creators:
+            <ul>
+                <li ng-repeat="item in comicDetail.creators.items">
+                    {{item.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+  background: url(../img/wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Bangers', cursive;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.marvelHeader {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.marvelHeader:hover {
+  color: #ff3809;
+}
+.marvelApiBody,
+.marvelApiDetail {
+  width: 85%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px 0;
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+.marvelApiBody .comicsList li,
+.marvelApiDetail .comicsList li {
+  height: 340px;
+  float: left;
+  width: 200px;
+  margin: 10px;
+  list-style: none;
+  text-align: center;
+}
+.marvelApiBody .comicsList li .title,
+.marvelApiDetail .comicsList li .title {
+  margin-top: 15px;
+  font-size: 16px;
+}
+.marvelApiBody .comicsList li .thumbnail,
+.marvelApiDetail .comicsList li .thumbnail {
+  width: 150px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.marvelApiBody .comicsList li .thumbnail:hover,
+.marvelApiDetail .comicsList li .thumbnail:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.marvelApiBody .detailPic,
+.marvelApiDetail .detailPic {
+  width: 100%;
+}
+.marvelApiDetail {
+  padding: 20px;
+  font-size: 20px;
+}
+.marvelApiDetail h1 {
+  font-family: 'Bangers', cursive;
+}
+.marvelApiDetail .price {
+  font-size: 30px;
+}

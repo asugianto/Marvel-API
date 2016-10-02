@@ -1,0 +1,14 @@
+<div class="marvelApiBody" ng-init="getMarvelApiData()">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="comicsList">
+                <li ng-repeat="item in comics">
+                    <a ng-href="#Detail/{{item.id}}">
+                        <img class="thumbnail" ng-src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}"/>
+                    </a>
+                    <div class="title">{{item.title}}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
